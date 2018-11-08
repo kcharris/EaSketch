@@ -6,9 +6,3 @@
     grid-template-rows: repeat(16, 1fr);
     grid-template-columns: repeat(16, 1fr);
 }
-div div{
-    background-color: lime;
-}
-.grid .hovered{
-    background-color: black;
-}

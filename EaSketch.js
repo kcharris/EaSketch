@@ -9,8 +9,13 @@ function createPix() {
 function pixulate() {
     const pixs = document.querySelectorAll(".grid div");
     pixs.forEach((pix) => {
+        pix.style.backgroundColor = "hsl(240, 100%, 90%)";
+        let i = 0
         pix.addEventListener('mouseover', () => {
-            pix.classList.add('hovered')
+            if (i < 90) {
+                i += 10;
+            }
+            pix.setAttribute("style", `background-color: hsl(240, 100%, ${90 - i}%)`)
         });
     })
 }
